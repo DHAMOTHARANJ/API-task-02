@@ -1,0 +1,100 @@
+body{
+    display: flex;
+    
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+    background: linear-gradient(0.33turn, #3f87a6, #ebf8e1, #f69d3c, #d3617b);
+    background-blend-mode: screen;
+}
+
+.card{
+    width: 20rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: none;
+    height: 30rem;
+    background: linear-gradient(110deg, #E6E6FA 60%, #F0F8FF 60%);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 0.75rem;
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: transform 0.4s;
+}
+.card:hover{
+    -ms-transform: scale(1.05); /* IE 9 */
+    -webkit-transform: scale(1.05); /* Safari 3-8 */
+    transform: scale(1.05); 
+}
+.pos1{
+    width: 10rem;
+    display: flex;
+    justify-content: center;
+    height: 15rem;
+}
+
+.png{
+  display: block;
+  margin-left: 10rem;
+  margin-top: 2rem;
+  /* margin-right: 1rem; */
+  width: 100%;
+  border-radius: 1.5rem;
+  object-position: center;
+
+}
+.pos2{
+    width: 20rem;
+    margin: auto;
+    height: 15rem;
+}
+.box{
+    text-align: center;
+}
+.details{
+    display:flex;
+    flex-direction: row;
+    font-size: 16px;
+    color: #0C090A;
+    padding-bottom: 0.5rem;
+    
+}
+.icon{
+    margin: auto;
+    width: 1.5rem;
+    margin-left: 2rem;
+}
+.companyName{
+    text-align: center;
+    color: #000000;
+    text-decoration: underline;
+    margin-right: 1rem;
+    text-decoration-color: #454545;
+}
+.values{
+    flex: 1;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom:0;
+}
+.searchBox{
+    height: 3rem;
+    width: 500px;
+    border: 1px solid blanchedalmond;
+    outline: none;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+    border-radius: 4px;
+    font-size: 16px;
+    padding-left: 1.5rem;
+}
+@media (min-width: 52px) and (max-width: 540px){
+    body{
+        display: block;
+        align-items: center;
+    }
+    .card{
+        margin-bottom: 1rem;
+        margin-left: 1rem;
+    }
+}
